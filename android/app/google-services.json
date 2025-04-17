@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "927538565015",
+    "project_id": "fireship-1a78f",
+    "storage_bucket": "fireship-1a78f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927538565015:android:fceefe0d5d0ed96bb43ed2",
+        "android_client_info": {
+          "package_name": "ro.devnautica.quizapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_GJBY5uB7MXaEuYsJntc_I7bLP_1sKRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
