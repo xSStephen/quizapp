@@ -5,6 +5,17 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Center(
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.blue,
+            foregroundColor: Colors.white,
+          ),
+          onPressed: () => Navigator.pushNamed(context, '/about'),
+          child: Text('about'),
+        ),
+      ),
+    );
   }
 }

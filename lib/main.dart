@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:quizapp/routes.dart';
+import 'package:quizapp/theme.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -31,16 +33,22 @@ class _AppState extends State<MyApp> {
       builder: (context, snapshot) {
         // Check for errors
         if (snapshot.hasError) {
-          return Text('error');
+          return Directionality(
+            textDirection: TextDirection.ltr,
+            child: Text('error'),
+          );
         }
 
         // Once complete, show your application
         if (snapshot.connectionState == ConnectionState.done) {
-          return MaterialApp();
+          return MaterialApp(routes: appRoutes, theme: appTheme);
         }
 
         // Otherwise, show something whilst waiting for initialization to complete
-        return Text('loading');
+        return Directionality(
+          textDirection: TextDirection.ltr,
+          child: Text('loading'),
+        );
       },
     );
   }
