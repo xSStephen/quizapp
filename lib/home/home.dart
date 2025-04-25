@@ -12,8 +12,8 @@ class HomePage extends StatelessWidget {
             backgroundColor: Colors.blue,
             foregroundColor: Colors.white,
           ),
-          onPressed: () => Navigator.pushNamed(context, '/about'),
-          child: Text('about'),
+          onPressed: () => Navigator.pushNamed(context, '/topics'),
+          child: Text('about', style: Theme.of(context).textTheme.labelLarge),
         ),
       ),
     );
