@@ -6,6 +6,9 @@ class TopicsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(bottomNavigationBar: BottomNavBar());
+    return Scaffold(
+      bottomNavigationBar: BottomNavBar(),
+      body: Center(child: Text('Topics', style: TextStyle(fontSize: 24))),
+    );
   }
 }

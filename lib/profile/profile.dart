@@ -6,6 +6,9 @@ class ProfilePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(bottomNavigationBar: BottomNavBar());
+    return Scaffold(
+      bottomNavigationBar: BottomNavBar(),
+      body: Center(child: Text('Profile', style: TextStyle(fontSize: 24))),
+    );
   }
 }
