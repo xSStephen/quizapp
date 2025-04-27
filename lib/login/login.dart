@@ -23,6 +23,12 @@ class LoginPage extends StatelessWidget {
                 loginMethod: AuthService().anonLogin,
               ),
             ),
+            LoginButton(
+              color: Colors.blue,
+              icon: FontAwesomeIcons.google,
+              text: 'Sign in with Google',
+              loginMethod: AuthService().googleLogin,
+            ),
           ],
         ),
       ),
