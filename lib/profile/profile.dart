@@ -14,7 +14,7 @@ class ProfilePage extends StatelessWidget {
           await AuthService().signOut();
           Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
         },
-        child: Text('sign outt'),
+        child: Text('sign out'),
       ),
     );
   }
