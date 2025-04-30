@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:quizapp/services/auth.dart';
-import 'package:quizapp/shared/bottom_nav.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -12,6 +11,7 @@ class ProfilePage extends StatelessWidget {
       body: ElevatedButton(
         onPressed: () async {
           await AuthService().signOut();
+          // ignore: use_build_context_synchronously
           Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
         },
         child: Text('sign out'),
