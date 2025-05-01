@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const Center(child: Text('error'));
         } else if (snapshot.hasData) {
-          return const TopicsPage();
+          return const TopicsScreen();
         } else {
           return const LoginPage();
         }
