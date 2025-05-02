@@ -61,6 +61,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   await AuthService().signOut();
                   if (mounted) {
                     Navigator.of(
+                      // ignore: use_build_context_synchronously
                       context,
                     ).pushNamedAndRemoveUntil('/', (route) => false);
                   }
